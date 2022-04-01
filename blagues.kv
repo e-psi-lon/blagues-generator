@@ -1,0 +1,66 @@
+<Blague>:
+
+    GridLayout:
+
+        size: root.width / 3, root.height
+        pos: root.width / 8, 0
+        cols:1
+
+        Button:
+            font_size: 50
+            width: 300
+            text: "Dev"
+            on_press: root.DEV()
+
+        Button:
+            font_size: 50
+            width: 30
+            text: "Beauf"
+            on_press: root.BEAUF()
+
+        Button:
+            font_size: 50
+            width: 30
+            text: "Global"
+            on_press: root.GLOBAL()
+
+        Button:
+            font_size: 50
+            width: 30
+            text: "Noir"
+            on_press: root.DARK()
+
+        Button:
+            font_size: 50
+            width: 30
+            text: "+18"
+            on_press: root.LIMIT()
+
+        Button:
+            font_size: 50
+            width: 30
+            text: "Blondes"
+            on_press: root.BLONDES()
+
+
+    GridLayout:
+        size: root.width / 2, root.height
+        pos: root.width / 2, 0
+        rows:4
+
+        Label:
+            font_size: 50
+            text: "Blague :"
+        Label:
+            font_size: 50
+            id: joke
+            text: str(root.joke)
+
+        Label:
+            font_size: 50
+            text: "Réponse :"
+
+        Label:
+            font_size: 50
+            id: answer
+            text: str(root.answer)
