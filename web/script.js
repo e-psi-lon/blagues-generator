@@ -1,27 +1,30 @@
-function normal() {
-    document.write("normal")
+const blagues = new BlaguesAPI("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzA4MDA2NDc4ODA3Njk1NDUwIiwibGltaXQiOjEwMCwia2V5IjoiR05RYlg5Ujk0YW1EZkRZeHFLMHFnMzZ4TTRIT040cEZjUE5JWHZoam40czRiUjBoTTgiLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0zMFQxNDozMDoyNCswMDowMCIsImlhdCI6MTY0ODY1MDYyNH0.-EIfexJJHJIoIvbyT3ZCPMqqakp36RQ8gHGB5XwAO8Q");
+
+async function normal() {
+    var blague = await blagues.randomCategorized(blagues.categories.GLOBAL);
+    console.log(blague.joke)
 };
 
-function dev() {
+async function dev() {
     document.write("dev")
 };
 
-function beauf() {
+async function beauf() {
     document.write("beauf")
 };
 
-function dark() {
+async function dark() {
     document.write("dark")
 };
 
-function limit() {
+async function limit() {
     document.write("limit")
 };
 
-function blondes() {
+async function blondes() {
     document.write("blondes")
 };
 
-function random() {
+async function random() {
     document.write("random")
 }

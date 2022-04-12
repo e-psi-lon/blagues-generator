@@ -2,7 +2,7 @@
   "name": "blagues-generator",
   "version": "1.0.0",
   "description": "Blagues generator with blagues api",
-  "main": "index.js",
+  "main": "script.js",
   "directories": {
     "test": "test"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/e-psi-lon/blagues-generator#readme",
   "dependencies": {
-    "blagues-api": "^2.1.0"
+    "blagues-api": "^2.1.0",
+    "browserify": "^17.0.0"
   }
 }
