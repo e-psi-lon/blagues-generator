@@ -15,7 +15,12 @@ class Blague(Widget):
     joke = "machin"
     answer = "truc"
 
-
+    async def GLOBAL(self):
+        blague = await blagues.random_categorized(BlagueType.GLOBAL)
+        self.joke.text = blague.joke
+        self.answer.text = blague.answer
+        return
+        
     async def DEV(self):
         blague = await blagues.random_categorized(BlagueType.DEV)
         self.joke.text = blague.joke
@@ -27,13 +32,6 @@ class Blague(Widget):
         self.joke.text = blague.joke
         self.answer.text = blague.answer
         return
-
-    async def GLOBAL(self):
-        blague = await blagues.random_categorized(BlagueType.GLOBAL)
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
-        return
-
 
     async def DARK(self):
         blague = await blagues.random_categorized(BlagueType.DARK)
@@ -52,6 +50,13 @@ class Blague(Widget):
         self.joke.text = blague.joke
         self.answer.text = blague.answer
         return
+
+    async def RANDOM(self):
+        blague = await blagues.random
+        self.joke.text = blague.joke
+        self.answer.text = blague.answer
+        return
+
 
 class BlaguesApp(App):
     def build(self):
