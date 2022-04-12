@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/e-psi-lon/blagues-generator/issues"
   },
-  "homepage": "https://github.com/e-psi-lon/blagues-generator#readme"
+  "homepage": "https://github.com/e-psi-lon/blagues-generator#readme",
+  "dependencies": {
+    "blagues-api": "^2.1.0"
+  }
 }
