@@ -1,0 +1,22 @@
+{
+  "name": "blagues-generator",
+  "version": "1.0.0",
+  "description": "Blagues generator with blagues api",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-psi-lon/blagues-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-psi-lon/blagues-generator/issues"
+  },
+  "homepage": "https://github.com/e-psi-lon/blagues-generator#readme"
+}
