@@ -12,19 +12,19 @@ blagues = BlaguesAPI(
 class Blague(Widget):
     joke = ObjectProperty(None)
     answer = ObjectProperty(None)
-    joke = "machin"
-    answer = "truc"
+    joke = "Blague ici"
+    answer = "Réponse là"
 
     async def GLOBAL(self):
         blague = await blagues.random_categorized(BlagueType.GLOBAL)
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
+        self.joke.text = await blague.joke
+        self.answer.text = await blague.answer
         return
         
     async def DEV(self):
         blague = await blagues.random_categorized(BlagueType.DEV)
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
+        self.joke.text = await blague.joke
+        self.answer.text = await blague.answer
         return
     
     async def BEAUF(self):
@@ -35,8 +35,8 @@ class Blague(Widget):
 
     async def DARK(self):
         blague = await blagues.random_categorized(BlagueType.DARK)
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
+        self.joke.text = await blague.joke
+        self.answer.text = await blague.answer
         return
 
     async def LIMIT(self):
@@ -47,14 +47,14 @@ class Blague(Widget):
 
     async def BLONDES(self):
         blague = await blagues.random_categorized(BlagueType.BLONDES)
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
+        self.joke.text = await blague.joke
+        self.answer.text = await blague.answer
         return
 
     async def RANDOM(self):
         blague = await blagues.random
-        self.joke.text = blague.joke
-        self.answer.text = blague.answer
+        self.joke.text = await blague.joke
+        self.answer.text = await blague.answer
         return
 
 
